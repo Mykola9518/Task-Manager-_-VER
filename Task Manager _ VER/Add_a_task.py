@@ -5,7 +5,7 @@ class add_title():
         self.title=title_task
         print('Title task:' + self.title)
 class add_description():
-    def __init__(self)        :
+    def __init__(self):
         print('Add a task description')
         description_task = str(input())
         self.description = description_task
@@ -20,10 +20,13 @@ class deadline():
         date_format = '%Y-%m-%d %H:%M'
         date_obj = datetime.strptime(date_str, date_format)
         self.result = date_obj
-        print('Date and time of deadline:')
+        print(f'Date and time of deadline: {self.result}')
 add_title_task = add_title()
 add_description_task = add_description()
 add_deadline = deadline()
+
+
+
 
 
 
